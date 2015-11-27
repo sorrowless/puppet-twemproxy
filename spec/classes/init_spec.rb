@@ -27,10 +27,12 @@ describe 'twemproxy' do
 
     it "shoud compile with minimum of additional parameters" do
       should contain_class('twemproxy').with(
-        'clients_array' => [
-                            '10.10.10.10:11211:1',
-                            '10.10.10.20:11211:1',
-                           ],
+        'listen_address' => '127.0.0.1',
+        'listen_port'    => '22122',
+        'clients_array'  => [
+                             '10.10.10.10:11211:1',
+                             '10.10.10.20:11211:1',
+                            ],
       )
     end
 
