@@ -1,5 +1,7 @@
 # twemproxy
 
+[![Build Status](https://travis-ci.org/sorrowless/puppet-twemproxy.svg?branch=master)](https://travis-ci.org/sorrowless/puppet-twemproxy)
+
 #### Table of Contents
 
 1. [Overview](#overview)
