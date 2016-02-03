@@ -1,1 +1,2 @@
-DAEMON_ARGS='-c /etc/nutcracker.yml'
+DAEMON_ARGS='-c /etc/nutcracker.yml<%- if @stats_port -%> -s <%= @stats_port %><%- end -%><%- if @stats_addr -%> -a <%= @stats_addr %><%- end -%><%- if @stats_interval -%> -i <%= @stats_interval %><%- end -%>'
+DAEMON_OPTS=$DAEMON_ARGS
